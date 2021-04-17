@@ -1,6 +1,9 @@
 from flask import Flask,request
 from saved_model.predict import predict_data
 import json
+import os
+
+port = int(os.environ.get("PORT", 5000))
 
 # create the flask object
 app = Flask(__name__)
@@ -21,4 +24,4 @@ def predict():
     return json.dumps(str(prediction))
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0', port=port, debug=True)
