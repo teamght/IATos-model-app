@@ -1,0 +1,14 @@
+.idea/
+venv/
+
+src/__*
+src/*/__*
+
+*.py_
+*.pyc
+
+.git__/
+*.wav
+*.webm
+
+saved_model/bin/

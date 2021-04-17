@@ -1,0 +1,13 @@
+tensorflow
+ffmpeg==1.4
+Flask
+Flask-Cors
+flask-marshmallow
+flask-mongoengine
+Flask-RESTful
+gunicorn
+librosa
+statistics
+dnspython
+pydub
+tqdm
